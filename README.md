@@ -187,7 +187,3 @@ Dockerfile                   image unique (API, pipeline, dashboard, MLflow)
 docker-compose.yml           déploiement local des 4 services
 .streamlit/config.toml       thème du dashboard
 ```
-
-## 8. Citation
-
-Fanaee-T, H. & Gama, J. (2013). *Event labeling combining ensemble detectors and background knowledge.* Progress in Artificial Intelligence, 2, 113-127. Données : UCI Machine Learning Repository, licence CC BY 4.0.
