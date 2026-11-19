@@ -4,7 +4,7 @@ Chaîne MLOps complète et exécutable en local : ingestion de données vérifi�
 
 Le modèle est volontairement simple ; l'objet du projet est la chaîne opérationnelle autour de lui.
 
-**Binôme :** Rania Chanoun et Elodie Andriamahanintsoa — projet issu de la fusion de nos deux travaux (voir §9).
+**Binôme :** Rania Chanoun et Elodie Andriamahanintsoa.
 
 - **Notebook de démonstration commenté :** [`notebooks/projet_mlops_velos.ipynb`](notebooks/projet_mlops_velos.ipynb) — exécutable en local **ou sur Google Colab** (voir §4)
 - **Synthèse des choix et résultats OPS :** [`SYNTHESE_OPS.md`](SYNTHESE_OPS.md)
@@ -191,16 +191,3 @@ docker-compose.yml           déploiement local des 4 services
 ## 8. Citation
 
 Fanaee-T, H. & Gama, J. (2013). *Event labeling combining ensemble detectors and background knowledge.* Progress in Artificial Intelligence, 2, 113-127. Données : UCI Machine Learning Repository, licence CC BY 4.0.
-
-## 9. Fusion des deux projets du binôme
-
-Le dépôt réunit deux travaux menés en parallèle sur le même sujet :
-
-| Apport | Origine | Ce qui a été repris / adapté |
-|---|---|---|
-| Chaîne MLOps complète (paquet `bikeml`, rejeu par lots, contrôles bloquants, Prefect, registre et règles de promotion, rollback, API tracée, feedbacks, supervision, charge, 33 tests, notebook) | Rania Chanoun | base du dépôt |
-| Conteneurisation (Dockerfile, `.dockerignore`) et correction de l'en-tête `Host` refusé par MLflow 3 | Elodie Andriamahanintsoa | étendue en `docker-compose.yml` à 4 services (MLflow, pipeline, API, dashboard) |
-| Thème et mise en forme du dashboard Streamlit (cartes de métriques) | Elodie Andriamahanintsoa | appliqués au dashboard à 5 onglets |
-| Modèle RandomForest (toutes variables, découpage aléatoire 80/20, RMSE 50,1) | Elodie Andriamahanintsoa | conservé comme **expérience de comparaison** dans le notebook (§5) : évalué en découpage temporel, son RMSE passe à 75,0, ce qui justifie le choix d'une évaluation temporelle |
-
-L'historique Git des deux contributions est conservé.
