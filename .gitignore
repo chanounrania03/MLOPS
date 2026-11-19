@@ -1,5 +1,5 @@
 # données et artefacts générés (reproductibles via `make setup` / `make pipeline`)
-data/
+/data/
 mlruns/
 mlartifacts/
 mlflow.db
